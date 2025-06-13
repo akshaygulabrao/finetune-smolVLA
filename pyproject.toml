@@ -1,0 +1,16 @@
+[project]
+name = "hackathon-14jun25"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "feetech-servo-sdk>=1.0.0",
+    "lerobot",
+]
+
+[tool.uv.sources]
+lerobot = { path = "lerobot", editable = true }
+
+[dependency-groups]
+dev = [
+    "lerobot>=0.1.0",
+]

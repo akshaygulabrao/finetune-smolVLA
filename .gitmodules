@@ -1,0 +1,6 @@
+[submodule "lerobot"]
+	path = lerobot
+	url = git@github.com:huggingface/lerobot.git
+[submodule "Feetech-tuna"]
+	path = Feetech-tuna
+	url = git@github.com:iotdesignshop/Feetech-tuna.git
