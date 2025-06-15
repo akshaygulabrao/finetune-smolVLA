@@ -1,4 +1,6 @@
-# FineTuning Smol-VLA for better performance
+# FineTuning Smol-VLA for robust pick and place
+![Robust Pick and Place](media/IMG_1428.JPG)
+
 
 ## Getting Started
 
@@ -10,7 +12,7 @@ We are using lerobot as a git submodule so you need to:
 cd <project_root>
 git submodule update --init --recursive
 uv sync
-uv extra --group 
+uv sync --extra feetech
 ```
 The device ID is a unique identifier for the servo bus adapter used to control the motors. The find_port.py 
 returns a **<device_id>** which you will need.
@@ -30,8 +32,9 @@ uv run python -m lerobot.calibrate \
 --robot.type=so101_follower \
 --robot.port=<device_id> \
 --robot.id=a_follower
+
+uv run python
 ```
-The next thing to get working is checking your cameras. This can be done with   
 
 ## Troubleshooting
 
