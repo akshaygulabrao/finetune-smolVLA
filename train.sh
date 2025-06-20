@@ -1,8 +1,11 @@
-# Assumes on huggingface space
-python lerobot/scripts/train.py \
-  --dataset.repo_id=${HF_USER}/so101_test \
-  --policy.type=act \
-  --output_dir=outputs/train/act_so101_test \
-  --job_name=act_so101_test \
-  --policy.device=cuda \
-  --wandb.enable=true
+HF_USER=oxhatestrading
+
+cd lerobot && python lerobot/scripts/train.py \
+  --policy.path=lerobot/smolvla_base \
+  --dataset.repo_id=${HF_USER}/peasant0 \
+  --batch_size=32 \
+  --steps=20000 \
+  --log_freq=100 \
+  --output_dir=outputs/train/my_smolvla \
+  --job_name=my_smolvla_training \
+  --policy.device=mps

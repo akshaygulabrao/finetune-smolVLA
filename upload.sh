@@ -1,0 +1,1 @@
+huggingface-cli upload --repo-type=dataset --revision=2 peasant0 ~/.cache/huggingface/lerobot/oxhatestrading/peasant0
