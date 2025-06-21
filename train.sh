@@ -1,5 +1,5 @@
 HF_USER=oxhatestrading
-
+export TOKENIZERS_PARALLELISM=true
 cd lerobot && python lerobot/scripts/train.py \
   --policy.path=lerobot/smolvla_base \
   --dataset.repo_id=${HF_USER}/peasant0 \
